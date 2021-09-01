@@ -21,11 +21,8 @@ html{
 
 body {
   font: normal 16px/1.5 "Bebas Neue", sans-serif;
-  background: rgb(27, 27, 27);
-  color: #fff;
-  background-image: url('/assets/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;  
+  background: transparent;
+  color: white;
   font-family: "Bebas Neue", sans-serif;
  
 }
@@ -188,12 +185,93 @@ button{
   outline: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1367px) {
  .contain{
-  margin: 30px 100px 0px;
+  margin: 0px 100px 0px;
+  padding-top: 20px ;
+  padding-bottom: 15px;
  
  }
+.div1{
+  margin-bottom: -30px;
+}
+.div1 img{
+  width: 90%;
+}
+.div1 h1{
+  font-size: 25px;
+}
+.div1 p{
+  font-size: 10px;
+}
+
+.buttons svg{
+  margin-top: -40px;
+  width: 20px;
+}
+
+
+
+#carousel  {
+  margin-top: 30px;
+  height: 138px;
+  margin-bottom: -10px;
+
+}
+
+#carousel div img {
+  width: 200px;
+  height: auto;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+}
+
+#carousel div.hideLeft img {
+  width: 200px;
+ 
+}
+
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  
+  transform: translateY(20px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 200px;
+ 
+}
+#carousel div.prevLeftSecond {
+  
+  transform: translateY(50px) translateX(-50%);
+ 
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  
+  transform: translateY(20px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 200px;
+}
+#carousel div.nextRightSecond {
+  
+  transform: translateY(50px) translateX(-50%);
+  
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+
+}
+
 
 
 }
+
  
