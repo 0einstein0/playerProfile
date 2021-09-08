@@ -60,9 +60,18 @@ h1{
   border-radius: 20px;
   box-shadow: 0 0 2px 2px #2e2e2e50;
 }
+
+.iframe img{
+  
+  position: relative;
+}
 .playbutton{
- position: relative;
- right: 50%;
+
+  position: absolute;
+  right: 45%;
+  top:30%;
+  transform: translate(0%, 50%);
+ 
 }
 
 .tags{
@@ -102,9 +111,7 @@ main{
 
 
 }
-.vid {
-  margin-left: 50px;
-}
+
 #carousel div {
   position: absolute;
    height: 300px;
@@ -281,7 +288,10 @@ button{
 
 }
 
-
+.playbutton{
+  top:10%;
+  right: 40%;
+}
 
 }
 
