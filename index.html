@@ -10,6 +10,8 @@
 </head>
 
 <body>
+ 
+  
   <div class="home">
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
     width="50" height="50"
@@ -17,7 +19,17 @@
     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><path d="M113,226c-62.40818,0 -113,-50.59182 -113,-113v0c0,-62.40818 50.59182,-113 113,-113v0c62.40818,0 113,50.59182 113,113v0c0,62.40818 -50.59182,113 -113,113z" fill="#2e2e2e"></path><g fill="#f1c40f"><path d="M113,45.97264c-0.59284,0 -1.18334,0.18803 -1.6876,0.56963l-62.69133,48.92969c-1.17206,0.92674 -1.3899,2.63904 -0.46316,3.83835c0.92674,1.17206 2.63904,1.3899 3.83835,0.46316l3.76382,-2.93865v71.65636c0,1.49914 1.22657,2.72571 2.72571,2.72571h38.15994v-49.06278h32.70852v49.06278h38.15994c1.49914,0 2.72571,-1.22657 2.72571,-2.72571v-71.65636l3.76382,2.93865c0.51788,0.3816 1.08794,0.57496 1.6876,0.57496c0.81771,0 1.60561,-0.35668 2.15075,-1.03811c0.92674,-1.19931 0.7089,-2.91161 -0.46316,-3.83835l-62.69133,-48.92969c-0.50426,-0.3816 -1.09476,-0.56963 -1.6876,-0.56963zM140.2571,56.73707v2.86412l16.35426,12.75547v-15.6196z"></path></g></g></svg> 
   </div>
 <div class="contain">
+ 
   <div class="div1 row">
+ <!-- The Modal -->
+    <div id="myModal"  class="text-center modal">
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      <div id="caption"></div>
+      <img class="modal-content" id='img01'>
+      <iframe class="modal-content" id='vid01'></iframe>
+    </div>
+
+
     <div class="img img-fluid col-md-4"><img  src="/assets/ind1.png" ><div><p class="tags">athlete</p><p class="tags">honoured</p><p class="tags">hockey</p></div></div>
     <div class="desc col-md-8"><h1>Bertie, Gordon – 1987</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis commodo rutrum. Aliquam quis arcu metus. Nam condimentum elementum felis a
       placerat. Vestibulum ut venenatis dolor. Quisque lobortis scelerisque fermentum. Donec eleifend consequat tellus, sit amet ultrices nisi lacinia vitae.
@@ -35,38 +47,43 @@
       lacus, et placerat nulla pellentesque ac. </p></div>
   </div>
   <div class="div2">
-    
+   
 
     <main>
 
       <div id="carousel">
   
          <div class="hideLeft">
-          <img src="/assets/car1.png">
+          <img  id="img1" onClick="getId(this)" alt='European Qualifiers'   src="/assets/car1.png">
         </div>
   
         <div class="prevLeftSecond">
-          <img src="/assets/car2.jpg">
-        </div>
+          <!------Video Add video ID for Thumbnail and embed link in vidsrc-->
+          <img id="img2" onClick="getId(this)" alt='Copa America' src='https://img.youtube.com/vi/yVa5uAol_Bg/default.jpg' class="vid"  vidsrc="https://www.youtube.com/embed/yVa5uAol_Bg" ><svg class="playbutton" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="45" height="45"
+          viewBox="0 0 226 226"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><path d="M113,226c-62.40818,0 -113,-50.59182 -113,-113v0c0,-62.40818 50.59182,-113 113,-113v0c62.40818,0 113,50.59182 113,113v0c0,62.40818 -50.59182,113 -113,113z" fill="#e0c008"></path><g fill="#333333"><path d="M159.9628,100.46453l-67.8,-45.2c-2.51613,-1.67993 -5.43153,-2.5312 -8.35447,-2.5312c-2.4408,0 -4.8816,0.5876 -7.11147,1.7854c-4.89667,2.6216 -7.9552,7.72167 -7.9552,13.28127v90.4c0,5.5596 3.05853,10.65967 7.9552,13.28127c2.22987,1.1978 4.67067,1.7854 7.11147,1.7854c2.92293,0 5.83833,-0.85127 8.362,-2.5312l67.8,-45.2c4.18853,-2.79487 6.70467,-7.49567 6.70467,-12.53547c0,-5.0398 -2.51613,-9.7406 -6.7122,-12.53547z"></path></g></g></svg> 
+       </img>
+           </div>
   
         <div class="prev">
-          <img src="/assets/car8.jfif">
+          <img  id="img3" onClick="getId(this)" alt='El Clasico'  src="/assets/car8.jfif">
         </div>
   
-        <div class="selected">
-          <img src="/assets/car4.jpg">
+        <div class="selected" >
+          <img id="img4" onClick="getId(this)" alt='Hockey Championship' src="/assets/car4.jpg">
         </div>
   
         <div class="next">
-          <img src="/assets/car5.jfif">
+          <img  id="img5" onClick="getId(this)" alt='City Derby'  src="/assets/car5.jfif">
         </div>
   
         <div class="nextRightSecond">
-          <img src="/assets/car3.jfif">
+          <img  id="img6" onClick="getId(this)" alt='World Cup'  src="/assets/car3.jfif">
         </div>
   
         <div class="hideRight">
-          <img src="/assets/car7.jfif">
+          <img  id="img7" onClick="getId(this)" alt='La Liga'  src="/assets/car7.jfif">
         </div>
   
       </div>
